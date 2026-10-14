@@ -1,0 +1,41 @@
+OK 1 - Inicia sin archivo
+OK 2 - Búsqueda por nombre sin distinguir mayúsculas
+OK 3 - Guardado automático
+OK 4 - Se agregan personajes
+OK 5 - No admite personajes duplicados
+OK 6 - Rechaza atributos no positivos
+OK 7 - No guarda personaje inválido
+OK 8 - Modificar personaje
+OK 9 - Actualizar un atributo
+Personajes cargados correctamente.
+OK 10 - Persistencia tras reiniciar
+OK 11 - Persiste nuevo ataque
+Personajes cargados correctamente.
+OK 12 - Eliminación persistente
+OK 13 - Cuenta líneas en blanco
+OK 14 - Cuenta secuencias de letras y dígitos
+OK 15 - Frecuencia de palabras
+OK 16 - Números como palabra
+OK 17 - Cuenta caracteres sin saltos de línea
+OK 18 - Rechaza archivos inexistentes
+OK 19 - Archivo vacío
+OK 20 - Archivo de videojuegos inexistente
+OK 21 - Agrega registros
+OK 22 - Busca por ID
+OK 23 - No permite ID duplicado
+OK 24 - Archivo secuencial persistente
+OK 25 - Eliminación persistente de registro
+OK 26 - Registro eliminado no reaparece
+OK 27 - Formato secuencial correcto
+OK 28 - No admite precios negativos
+OK 29 - Carga la agenda
+OK 30 - Busca contacto
+OK 31 - Lectura de bytes
+Nombre: TestFile.java
+Es directorio: false
+Es ruta absoluta: true
+Última modificación: 2026-10-14T23:41:42.370235988Z
+Tamaño: 25 bytes
+Ruta absoluta: /tmp/laboratorio7_17182436398280179532/TestFile.java
+OK 32 - Ruta para la actividad NIO
+RESULTADO: 32 VERIFICACIONES CORRECTAS
