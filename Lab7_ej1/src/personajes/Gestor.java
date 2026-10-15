@@ -3,6 +3,7 @@ package personajes;
 import java.util.List;
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Optional;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -85,12 +86,13 @@ public class Gestor {
 
     public Personaje buscarPersonaje(String nombre)
     {
-        for(Personaje personaje: personajes)
+        Optional<Personaje> resultado = personajes.stream()
+                .filter(p -> p.getNombre().equalsIgnoreCase(nombre.trim()))
+                .findFirst();
+
+        if(resultado.isPresent())
         {
-            if(personaje.getNombre().equalsIgnoreCase(nombre.trim()))
-            {
-                return personaje;
-            }
+            return resultado.get();
         }
         return null;
     }
