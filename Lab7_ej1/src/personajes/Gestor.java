@@ -210,21 +210,20 @@ public class Gestor {
                 (double)defensa / personajes.size(), (double)alcance / personajes.size());
     }
 
-    // Ejercicio 2: filtrado sencillo sin expresiones lambda.
+    // Ejercicio 2: filtrado por vida.
     public void filtrarPorVida(int minimo)
     {
-        boolean encontrado = false;
-        for(Personaje personaje: personajes)
-        {
-            if(personaje.getVida() >= minimo)
-            {
-                System.out.println(personaje);
-                encontrado = true;
-            }
-        }
-        if(!encontrado)
+        List<Personaje> filtrados = personajes.stream()
+                .filter(p -> p.getVida() >= minimo)
+                .toList();
+
+        if(filtrados.isEmpty())
         {
             System.out.println("No se encontraron personajes.");
+        }
+        else
+        {
+            filtrados.forEach(p -> System.out.println(p));
         }
     }
 
